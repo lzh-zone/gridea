@@ -1,0 +1,323 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>水果蔬菜成熟度检测相关笔记 | LZH-ZONE</title>
+<link rel="shortcut icon" href="https://gr.010702.xyz/favicon.ico?v=1731892803350">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://gr.010702.xyz/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="水果蔬菜成熟度检测相关笔记 | LZH-ZONE - Atom Feed" href="https://gr.010702.xyz/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="1.水果成熟度概述
+1.1水果成熟度定义
+水果的成熟度一般可划分为以下3种：可采成熟度、食用成熟度和生理成熟度。
+其中，可采成熟度的定义为水果果实部分已经生长至成熟期大小，基本定型，继续生长基本不会引起果实大小的变化，并且出现成熟时期特有的..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://gr.010702.xyz">
+  <img class="avatar" src="https://gr.010702.xyz/images/avatar.png?v=1731892803350" alt="">
+  </a>
+  <h1 class="site-title">
+    LZH-ZONE
+  </h1>
+  <p class="site-description">
+    知进退
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              水果蔬菜成熟度检测相关笔记
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-11-13
+              </span>
+              <span>
+                12 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="1水果成熟度概述">1.水果成熟度概述</h1>
+<h2 id="11水果成熟度定义">1.1水果成熟度定义</h2>
+<p>水果的成熟度一般可划分为以下3种：可采成熟度、食用成熟度和生理成熟度。</p>
+<p>其中，可采成熟度的定义为水果果实部分已经生长至成熟期大小，基本定型，继续生长基本不会引起果实大小的变化，并且出现成熟时期特有的性能与色泽特征，基本完成了内部营养物质的积累。此时果实已达到可以采摘的阶段，但采摘的果实并不适用于鲜食，而适用于长距离运输或是长期的储藏。所以用于存储或者是远距离运输的水果应在可采成熟期进行采摘。</p>
+<p>食用成熟度是继可采成熟度后的第2阶段，一般是指水果果实部分无论是形状、色泽、香气或味道都达到了最优状态，是即食的最佳成熟状态。所以，用于即食、短期存储或短距离运输的水果建议在此成熟期进行采摘。</p>
+<p>生理成熟度是成熟度划分中的最后阶段，一般是指不仅水果果实达到充分成熟的阶段，水果的种子也趋于成熟，主要的表现为果肉已经开始出现软烂，此时果实不仅已不适于即食，更不可用于运输和储藏，一般不建议水果在此时采摘。</p>
+<h2 id="12水果成熟度常用标准">1.2水果成熟度常用标准</h2>
+<p>测定蔬菜和水果成熟度的标准通常涉及一些物理和化学指标。以下是一些常用的评估方法和标准：</p>
+<ol>
+<li>外观特征<br>
+颜色：水果和蔬菜的颜色变化是成熟度的重要指标。例如，番茄从绿色逐渐变为红色。<br>
+形状：成熟时果实或蔬菜的形状通常更饱满。</li>
+</ol>
+<blockquote>
+<p>相关文献1:《基于RGB和HSV的水果成熟度分级系统》介绍如何利用RGB和HSV色彩空间对水果的成熟度进行评估和分级，强调了外观特征在水果成熟度判断中的重要性，主要内容包括：</p>
+</blockquote>
+<ul>
+<li>获取水果图像并进行RGB到HSV的转换。</li>
+<li>提取与水果成熟度相关的特征。</li>
+<li>确定成熟度的阈值，以便进行有效的分级。</li>
+</ul>
+<blockquote>
+<p>相关文献2: 《基于YOLOv8深度学习的草莓成熟度检测系统》利用YOLOv8深度学习模型进行草莓的形状识别和成熟度判断。</p>
+</blockquote>
+<ul>
+<li>数据来源：训练数据集由多种成熟度的草莓图像组成，包含不同光照条件、角度和背景的样本，以提高模型的鲁棒性。</li>
+<li>标注信息：数据集中的图像经过精确标注，包含草莓的边界框和成熟度等级标签，确保模型能够有效学习和识别各个成熟度阶段。</li>
+<li>数据增强：在训练过程中，采用数据增强技术（如旋转、缩放、颜色调整等）来提升模型的泛化能力。</li>
+</ul>
+<ol start="2">
+<li>质地和硬度<br>
+触感：用手轻轻按压，成熟的水果通常会有一定的柔软度。<br>
+硬度测定：使用硬度计测量果实的硬度，硬度减小通常表示成熟度增加。</li>
+</ol>
+<blockquote>
+<p>相关文献1:《一种基于果实硬度的水果成熟度评价方法》。这篇论文探讨了如何通过测量水果的硬度变化来量化其成熟度，并提出了一种将水果成熟度划分为五个级别的方法。研究中使用了香梨、苹果和红枣等水果的硬度数据，分析了成熟期果实硬度的变化规律，并通过实验验证了该方法的有效性。</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://patentimages.storage.googleapis.com/b2/97/15/d911644705747b/HDA0000464572280000011.png" alt="成熟度曲线" loading="lazy"></figure>
+<ol start="3">
+<li>糖分含量<br>
+可溶性固形物（Brix值）：通过折光仪测定水果中的糖分含量，Brix值的增加通常与成熟度相关。<br>
+还原糖含量：使用化学分析法（如费林法）测定还原糖的含量。</li>
+</ol>
+<blockquote>
+<p>相关文献1:《基于可溶性固形物含量的水果成熟度检测研究》探讨了如何通过折光仪测定水果中的可溶性固形物（Brix值），并分析了Brix值与水果成熟度之间的关系。研究表明，Brix值的增加通常与水果的成熟度正相关。</p>
+</blockquote>
+<blockquote>
+<p>相关文献2:《不同成熟度苹果的还原糖含量分析》使用费林法测定不同成熟度苹果的还原糖含量，结果显示，随着苹果成熟度的提高，还原糖含量显著增加，表明还原糖含量是判断苹果成熟度的重要指标。</p>
+</blockquote>
+<blockquote>
+<p>相关文献3:《草莓成熟度与糖分含量的关系研究》通过测定草莓中的可溶性固形物和还原糖含量，分析了不同成熟阶段草莓的糖分变化。结果表明，成熟草莓的Brix值和还原糖含量均显著高于未成熟草莓。</p>
+</blockquote>
+<blockquote>
+<p>相关文献4:《水果成熟度的化学分析方法研究》综述了多种化学分析方法，包括费林法和折光仪法，用于测定水果中的糖分含量。研究强调了这些方法在水果成熟度评估中的应用。</p>
+</blockquote>
+<ol start="4">
+<li>酸度<br>
+pH值检测：成熟的水果通常酸度降低，pH值上升。<br>
+有机酸含量测定：如柠檬酸、苹果酸等，成熟时有机酸含量会减少。</li>
+</ol>
+<blockquote>
+<p>相关文献1:《水果成熟度与酸度的关系研究》探讨了不同成熟阶段水果的pH值变化，结果表明，随着水果成熟度的提高，pH值显著上升，酸度降低。这一变化为判断水果的成熟度提供了重要依据。</p>
+</blockquote>
+<blockquote>
+<p>相关文献2:《有机酸含量对水果成熟度的影响》分析了多种水果（如苹果、柠檬）的有机酸含量（如柠檬酸、苹果酸）随成熟度变化的趋势。研究发现，成熟水果的有机酸含量普遍减少，表明有机酸含量是评估水果成熟度的重要指标。</p>
+</blockquote>
+<blockquote>
+<p>相关文献3:《基于pH值和有机酸含量的水果成熟度检测方法》提出了一种结合pH值检测和有机酸含量测定的方法，用于评估水果的成熟度。研究结果显示，pH值的升高和有机酸含量的降低均与水果的成熟度呈现出明显的相关性。</p>
+</blockquote>
+<blockquote>
+<p>相关文献4:《酸度测定在水果成熟度评估中的应用》综述了酸度测定在水果成熟度评估中的重要性，强调了pH值和有机酸含量的变化如何反映水果的成熟状态，为果农提供了科学的采摘依据。</p>
+</blockquote>
+<ol start="5">
+<li>芳香物质<br>
+气味：成熟的水果通常会散发出更浓郁的香味。</li>
+<li>成熟度分级标准<br>
+一些国家和地区有特定的成熟度分级标准，例如：美国农业部（USDA）标准：提供不同水果和蔬菜的成熟度分级。<br>
+国际水果和蔬菜标准：如国际贸易中心（ITC）等组织制定的标准。</li>
+<li>特定测试<br>
+非破坏性测试：如近红外光谱（NIR）技术，可以非破坏性地评估成熟度。<br>
+超声波测试：用于测量果实内部结构的变化。</li>
+</ol>
+<h1 id="2水果成熟度检测方式">2.水果成熟度检测方式</h1>
+<p>水果成熟度检测主要分为传统（有损）检测方式和新型（无损）检测方式两种检测方式。</p>
+<h2 id="21传统有损检测方式">2.1传统（有损）检测方式</h2>
+<p>传统检测技术主要包含外观品质检测、硬度检测、可溶性糖检测和可滴定酸检测。</p>
+<ol>
+<li>外观品质判断</li>
+</ol>
+<p>随着水果成熟度增加，会有其固有的大小、色泽、香气和味道等显著特征。果农综合各方面的因素，依据自身感官与经验对水果成熟度加以分析判断。</p>
+<p>但从技术角度上分析，人为对蔬菜和水果的成熟度等级进行判定是根据个人的感官与经验，瞬间判断结果因人而异，同时还受人的情绪和疲劳程度等主观因素的影响，不利于提高成熟度判别的标准性和统一性。</p>
+<ol start="2">
+<li>硬度检测</li>
+</ol>
+<p>测量方法：根据水果类型，选择不同测头;将果实表皮削去1～2cm2，每个果实选取2～4个测量点，将硬度计的压头压入果肉至相应刻度线，读取表针所指的刻度线，即为果肉硬度值。</p>
+<p>目前，国内学者陈建军[1]等利用FHM-1型水果硬度计检测柑橘硬度进行了果品的成熟度研究，确立了柑橘存储时间、硬度与成熟度之间的关系。</p>
+<ol start="3">
+<li>可溶性糖检测</li>
+</ol>
+<p>衡量水果成熟度的另一重要指标便是可溶性糖的总含量，也就是人们通常所说的水果的甜度，单位为mg/g。两者之间的关系为甜度越高，一般成熟度等级越高。</p>
+<p>果实中糖含量（可溶性总糖、还原糖）检测分析中，广泛采用容量法，如费林试剂滴定法[2]。国内学者张海利[3]等通过斐林试剂滴定法测定了6种类型辣椒果实在不同发育期的糖含量。结果表明，随着果实成熟度的增加，果实糖含量呈现不断增长的趋势，红色成熟辣椒的含糖量最高，其次为绿色成熟辣椒，而未成熟的辣椒含糖量最低。费林试剂滴定法虽然误差小，但操作繁复，所以冯吉[4]等人对费林试剂滴定法进行了改良，利用改良的DNS法测定新鲜果蔬中的糖分，并应用这种改良法测定了文旦和甜橙果实中的总糖含量，其测定值与采用费林法无显著差异。目前各生产厂家也开发出了数显糖度计等用于试过糖含量的检测，操作简便，检测效率高，只需滴入检测溶液按测定键即可实时读出水果含糖量。</p>
+<ol start="4">
+<li>酸度检测</li>
+</ol>
+<p>酸度与糖度一样，是衡量果实成熟度与风味品质的重要因素之一。最早检测酸度的方法为传统手工滴定法，测定方法需配制各种化学试剂，操作繁琐，检测效率低。目前，果实酸度检测分析中，更为常用的为基于电导法的酸度计测试法，无需化学试剂，通过电导率法观察电流流动来测量样品中酸度含量。只需将果肉溶于蒸馏水中按比例稀释，将溶液滴入酸度计测量棱镜中即可实时读出酸度含量，操作简单方便的同时，也大大提高了检测效率，给人们提供了极大的便利。</p>
+<h2 id="22新型无损检测方式">2.2新型（无损）检测方式</h2>
+<ol>
+<li>近红外光谱（NIR）</li>
+</ol>
+<p>原理：利用近红外光谱技术，通过测量水果反射的近红外光来分析其内部成分。</p>
+<p>优点：快速、无损，能够同时测定糖分、酸度和水分等多个指标。</p>
+<p>应用：适用于各种水果，如苹果、香蕉和浆果等。</p>
+<ol start="2">
+<li>超声波技术</li>
+</ol>
+<p>原理：超声波通过水果时，其传播速度和衰减程度会受到果实内部结构的影响，成熟度不同的水果表现出不同的超声波特性。</p>
+<p>优点：无损、快速，可以提供关于果实硬度和成熟度的信息。</p>
+<p>应用：常用于苹果、梨和柑橘等。</p>
+<ol start="3">
+<li>便携式折光仪</li>
+</ol>
+<p>原理：虽然传统折光仪通常需要汁液，但现代便携式折光仪可通过光谱分析技术直接对水果进行无损测量。</p>
+<p>优点：快速且易于操作，适合现场检测。</p>
+<p>应用：适用于多种水果，特别是需要快速评估的场合。</p>
+<ol start="4">
+<li>电阻抗法</li>
+</ol>
+<p>原理：通过测量水果的电阻抗，分析其内部水分和糖分含量，进而推测成熟度。</p>
+<p>优点：无损、简单，适合现场使用。</p>
+<p>应用：可以用于多种水果和蔬菜。</p>
+<ol start="5">
+<li>计算机视觉和图像分析</li>
+</ol>
+<p>原理：通过高分辨率相机拍摄水果图像，利用图像处理算法分析颜色、形状和表面特征。</p>
+<p>优点：无损、自动化程度高，能够快速评估大量样品。</p>
+<p>应用：适用于生产线和市场检测。</p>
+<ol start="6">
+<li>激光技术</li>
+</ol>
+<p>原理：利用激光技术测量水果表面的反射和散射特性，推断出果实的成熟度。</p>
+<p>优点：高精度、无损。</p>
+<p>应用：适合各种水果的质量控制。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#1%E6%B0%B4%E6%9E%9C%E6%88%90%E7%86%9F%E5%BA%A6%E6%A6%82%E8%BF%B0">1.水果成熟度概述</a>
+<ul>
+<li><a href="#11%E6%B0%B4%E6%9E%9C%E6%88%90%E7%86%9F%E5%BA%A6%E5%AE%9A%E4%B9%89">1.1水果成熟度定义</a></li>
+<li><a href="#12%E6%B0%B4%E6%9E%9C%E6%88%90%E7%86%9F%E5%BA%A6%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86">1.2水果成熟度常用标准</a></li>
+</ul>
+</li>
+<li><a href="#2%E6%B0%B4%E6%9E%9C%E6%88%90%E7%86%9F%E5%BA%A6%E6%A3%80%E6%B5%8B%E6%96%B9%E5%BC%8F">2.水果成熟度检测方式</a>
+<ul>
+<li><a href="#21%E4%BC%A0%E7%BB%9F%E6%9C%89%E6%8D%9F%E6%A3%80%E6%B5%8B%E6%96%B9%E5%BC%8F">2.1传统（有损）检测方式</a></li>
+<li><a href="#22%E6%96%B0%E5%9E%8B%E6%97%A0%E6%8D%9F%E6%A3%80%E6%B5%8B%E6%96%B9%E5%BC%8F">2.2新型（无损）检测方式</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://gr.010702.xyz/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/lzh-zone" target="_blank">LZH-ZONE</a>
+  <a class="rss" href="https://gr.010702.xyz/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
